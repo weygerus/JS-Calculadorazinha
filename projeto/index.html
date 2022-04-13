@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="calculadora em Javascript">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script-1.js"></script>
+        <title>Calculadora</title>
+    </head>
+
+    <body class="area">
+
+        <div class="celular">
+
+            <div class="camera"></div>
+
+            <div class="visor">
+                <form class="form" name='form'>
+                    <input disabled class="visor-expressao" name="visorconta">
+                    <input disabled class="visor" name='visor'> 
+                </form>
+            </div>
+
+            <div class="botoes">
+
+                <div class="linha1">
+                    <input type="button" class="botao" onClick="limpar()" value="C">
+                    <input type="button" class="botao" onClick="voltar()" value="Ce">
+                    <input type="button" class="botao" onClick="inserir('%')" value="%">
+                    <input type="button" class="botao" onClick="inserir('/')" value="/">
+                </div>
+                <div class="linha2">
+                    <input type="button" class="botao" onClick="inserir(7)" value="7">
+                    <input type="button" class="botao" onClick="inserir(8)" value="8">
+                    <input type="button" class="botao" onClick="inserir(9)" value="9">
+                    <input type="button" class="botao" onClick="inserir('*')" value="x">
+                </div>
+                <div class="linha3">
+                    <input type="button" class="botao" onClick="inserir(4)" value="4">
+                    <input type="button" class="botao" onClick="inserir(5)" value="5">
+                    <input type="button" class="botao" onClick="inserir(6)" value="6">
+                    <input type="button" class="botao" onClick="inserir('-')" value="-">
+                </div>
+                <div class="linha4">
+                    <input type="button" class="botao" onClick="inserir(1)" value="1">
+                    <input type="button" class="botao" onClick="inserir(2)" value="2">
+                    <input type="button" class="botao" onClick="inserir(3)" value="3">
+                    <input type="button" class="botao" id="somar" onClick="insert('+')" value="+">
+                </div>
+                <div class="linha5">
+                    <input type="button" id="zero" class="botao zero" onClick="inserir(0)" value="0">
+                    <input type="button" id="zero" class="botao" onClick="inserir('.')" value=",">
+                    <input type="button" class="botao" onClick="igual()" value="=">
+                </div>
+            </div>
+        </div> <!-- div.celular -->
+    </body>
+</html>
