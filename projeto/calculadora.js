@@ -7,9 +7,7 @@ function igual(){
     if(expressao)
     {
         document.form.visor.value = eval(expressao); //eval() -- avalia a expressão aritmetica da string
-        document.form.visorconta.value = expressao + '=';
-    }else{
-        document.getElementById('somar').ariaDisabled;
+        document.form.visorconta.value = expressao + ' =';
     }
 }
 function limpar(){
